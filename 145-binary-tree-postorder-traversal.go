@@ -17,6 +17,7 @@ func postorder(root *TreeNode, arr *[]int) {
 	postorder(root.Left, arr)
 	postorder(root.Right, arr)
 	*arr = append(*arr, root.Val)
+	fmt.Println("root.Val", root.Val)
 }
 
 func postorderTraversal(root *TreeNode) []int {
